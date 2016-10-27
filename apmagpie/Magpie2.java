@@ -46,6 +46,26 @@ public class Magpie2
         {
             response = "Tell me more about your pets.";
         }
+        else if (statement.indexOf("Mr.") >= 0)
+        {
+            response = "He sounds super awesome and cool you should give him $100";
+        }
+        else if (statement.trim().length()== 0)
+        {
+            response = "Say something pls";
+        }
+        else if (statement.indexOf("What's up?") >= 0)
+        {
+            response = "Nothing much, you??";
+        }
+        else if (statement.indexOf("friends") >= 0)
+        {
+            response = "How are your friends?";
+        }
+        else if (statement.indexOf("games") >= 0)
+        {
+            response = "What are your favorite games?";
+        }
         else
         {
             response = getRandomResponse();
